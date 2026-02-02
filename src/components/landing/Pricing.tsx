@@ -61,15 +61,15 @@ export function Pricing() {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="text-center mb-16"
+                    className="text-center mb-12 md:mb-16"
                 >
                     <span className="text-primary font-medium tracking-wide uppercase text-sm mb-4 block">
                         Pricing
                     </span>
-                    <h2 className="font-display text-5xl md:text-7xl font-bold text-white mb-6">
+                    <h2 className="font-display text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-4 md:mb-6">
                         Choose Your Plan
                     </h2>
-                    <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+                    <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto px-4">
                         Flexible pricing that scales with your needs. No hidden fees, cancel anytime.
                     </p>
                 </motion.div>
@@ -84,8 +84,8 @@ export function Pricing() {
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
                             className={`relative bg-card border rounded-3xl p-8 hover:scale-105 transition-all ${plan.popular
-                                    ? 'border-primary/50 shadow-2xl shadow-primary/20'
-                                    : 'border-white/5'
+                                ? 'border-primary/50 shadow-2xl shadow-primary/20'
+                                : 'border-white/5'
                                 }`}
                         >
                             {/* Popular Badge */}
@@ -114,8 +114,8 @@ export function Pricing() {
                             {/* CTA Button */}
                             <Button
                                 className={`w-full mb-8 h-12 rounded-2xl font-semibold ${plan.popular
-                                        ? 'bg-primary text-primary-foreground hover:bg-primary/90'
-                                        : 'bg-white/10 text-white hover:bg-white/20'
+                                    ? 'bg-primary text-primary-foreground hover:bg-primary/90'
+                                    : 'bg-white/10 text-white hover:bg-white/20'
                                     }`}
                                 asChild
                             >

@@ -36,7 +36,7 @@ export function Features() {
                     <motion.span
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
-                        className="text-primary font-medium tracking-wide uppercase text-lg mb-6 block"
+                        className="text-primary font-medium tracking-wide uppercase text-sm md:text-lg mb-4 md:mb-6 block"
                     >
                         Why Corus?
                     </motion.span>
@@ -44,11 +44,11 @@ export function Features() {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.1 }}
-                        className="font-display text-5xl md:text-8xl font-medium leading-[0.9] mb-8"
+                        className="font-display text-4xl sm:text-5xl md:text-8xl font-medium leading-[1] md:leading-[0.9] mb-6 md:mb-8"
                     >
                         More than <br /> just a desk.
                     </motion.h2>
-                    <p className="text-2xl text-muted-foreground w-full md:w-3/4 leading-relaxed">
+                    <p className="text-lg md:text-2xl text-muted-foreground w-full md:w-3/4 leading-relaxed">
                         We handle the logistics so you can focus on the breakthrough. Experience a workspace that works as hard as you do.
                     </p>
                 </div>

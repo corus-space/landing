@@ -75,11 +75,11 @@ export function Hero() {
                 </AnimatePresence>
 
                 {/* Content Container */}
-                <div className="relative z-10 h-full flex flex-col justify-between p-8 md:p-16">
+                <div className="relative z-10 h-full flex flex-col justify-between p-6 md:p-16">
 
                     <div className="flex justify-between items-start h-full">
                         {/* Left: Text Content - with AnimatePresence for slide transition */}
-                        <div className="pt-10 w-full md:w-3/4 flex flex-col justify-center h-full">
+                        <div className="pt-10 w-full lg:w-3/4 flex flex-col justify-center h-full">
                             <AnimatePresence mode="wait">
                                 <motion.div
                                     key={slide.id}
@@ -88,11 +88,11 @@ export function Hero() {
                                     exit={{ opacity: 0, y: -20 }}
                                     transition={{ duration: 0.5 }}
                                 >
-                                    <h1 className="font-display text-6xl md:text-8xl lg:text-9xl font-medium leading-[0.9] tracking-tight text-white mb-8">
+                                    <h1 className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-medium leading-[0.9] tracking-tight text-white mb-6 md:mb-8">
                                         {slide.headline_1} <br />
                                         <span className="text-[#E3D5CA] italic">{slide.headline_2}</span>
                                     </h1>
-                                    <p className="text-2xl md:text-3xl text-white/80 font-light leading-relaxed w-full md:w-3/4">
+                                    <p className="text-lg sm:text-xl md:text-3xl text-white/80 font-light leading-relaxed w-full md:w-3/4">
                                         {slide.subtext}
                                     </p>
                                 </motion.div>
@@ -124,22 +124,22 @@ export function Hero() {
                     </div>
 
                     {/* Bottom Control Bar */}
-                    <div className="mt-auto flex flex-col md:flex-row items-end justify-between gap-8">
-                        <div className="flex gap-4">
-                            <div className="h-20 px-10 rounded-full bg-black/30 backdrop-blur-md border border-white/10 flex items-center gap-5 text-white">
-                                <span className="font-display text-4xl">12</span>
-                                <span className="text-sm uppercase tracking-wider text-white/60 font-medium">Locations</span>
+                    <div className="mt-auto flex flex-col lg:flex-row items-start lg:items-end justify-between gap-6 md:gap-8 pt-12">
+                        <div className="flex flex-wrap gap-3 md:gap-4 w-full md:w-auto">
+                            <div className="h-16 md:h-20 px-6 md:px-10 rounded-full bg-black/30 backdrop-blur-md border border-white/10 flex items-center gap-3 md:gap-5 text-white flex-1 md:flex-none justify-center md:justify-start">
+                                <span className="font-display text-2xl md:text-4xl">12</span>
+                                <span className="text-xs md:text-sm uppercase tracking-wider text-white/60 font-medium">Locations</span>
                             </div>
-                            <div className="h-20 px-10 rounded-full bg-black/30 backdrop-blur-md border border-white/10 flex items-center gap-5 text-white">
-                                <span className="font-display text-4xl">100 +</span>
-                                <span className="text-sm uppercase tracking-wider text-white/60 font-medium">Desks</span>
+                            <div className="h-16 md:h-20 px-6 md:px-10 rounded-full bg-black/30 backdrop-blur-md border border-white/10 flex items-center gap-3 md:gap-5 text-white flex-1 md:flex-none justify-center md:justify-start">
+                                <span className="font-display text-2xl md:text-4xl">100 +</span>
+                                <span className="text-xs md:text-sm uppercase tracking-wider text-white/60 font-medium">Desks</span>
                             </div>
                         </div>
 
-                        <Link href="/spaces">
-                            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                                <Button className="cursor-pointer h-24 px-12 rounded-full bg-[#E3D5CA] text-[#0D1818] font-display text-2xl hover:bg-white hover:text-black transition-all">
-                                    Find Your Space <ArrowRight className="ml-4 h-8 w-8" />
+                        <Link href="/spaces" className="w-full lg:w-auto">
+                            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="w-full">
+                                <Button className="cursor-pointer w-full lg:w-auto h-20 md:h-24 px-8 md:px-12 rounded-full bg-[#E3D5CA] text-[#0D1818] font-display text-xl md:text-2xl hover:bg-white hover:text-black transition-all">
+                                    Find Your Space <ArrowRight className="ml-4 h-6 w-6 md:h-8 md:w-8" />
                                 </Button>
                             </motion.div>
                         </Link>

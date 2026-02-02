@@ -39,21 +39,21 @@ export function HowItWorks() {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="text-center mb-24"
+                    className="text-center mb-16 md:mb-24"
                 >
                     <span className="text-primary font-medium tracking-wide uppercase text-sm mb-4 block">
                         Simple Process
                     </span>
-                    <h2 className="font-display text-5xl md:text-7xl font-bold text-white mb-6">
+                    <h2 className="font-display text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-4 md:mb-6">
                         How It Works
                     </h2>
-                    <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+                    <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto px-4">
                         Get started in minutes. Finding and booking your perfect workspace has never been easier.
                     </p>
                 </motion.div>
 
                 {/* Steps Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
                     {STEPS.map((step, index) => (
                         <motion.div
                             key={index}
@@ -65,13 +65,13 @@ export function HowItWorks() {
                         >
                             {/* Card */}
                             <div className="flex flex-col items-center relative -ms-2 py-8 h-full">
-                                <div className="text-8xl font-display font-bold text-white/15">
+                                <div className="text-6xl md:text-8xl font-display font-bold text-white/15">
                                     {step.step}
                                 </div>
-                                <h3 className="font-display text-2xl font-semibold text-white mb-3">
+                                <h3 className="font-display text-xl md:text-2xl font-semibold text-white mb-2 md:mb-3">
                                     {step.title}
                                 </h3>
-                                <p className="text-muted-foreground leading-relaxed">
+                                <p className="text-muted-foreground text-sm md:text-base leading-relaxed max-w-xs mx-auto">
                                     {step.description}
                                 </p>
                             </div>

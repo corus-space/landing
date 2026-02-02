@@ -27,7 +27,7 @@ export function CTA() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.1 }}
-                            className="font-display text-4xl md:text-6xl font-bold text-white mb-6"
+                            className="font-display text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-6"
                         >
                             Ready to Transform <br className="hidden md:block" />
                             Your Workspace?
@@ -38,9 +38,9 @@ export function CTA() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.2 }}
-                            className="text-xl text-white/80 mb-10 max-w-2xl mx-auto"
+                            className="text-lg md:text-xl text-white/80 mb-8 md:mb-10 max-w-2xl mx-auto"
                         >
-                            Join thousands of professionals who've discovered a better way to work. <br />
+                            Join professionals who've discovered a better way to work. <br className="hidden md:block" />
                             Get started today with no commitment required.
                         </motion.p>
 
@@ -60,7 +60,7 @@ export function CTA() {
                                     Browse Spaces <ArrowRight className="ml-2 w-5 h-5" />
                                 </a>
                             </Button>
-                            <div className="w-px h-12 bg-white/50 transform rotate-15" />
+                            <div className="w-px h-12 bg-white/50 transform rotate-15 hidden md:block" />
                             <Button
                                 size="lg"
                                 variant="outline"
