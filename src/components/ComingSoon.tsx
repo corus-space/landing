@@ -186,7 +186,7 @@ export function ComingSoon() {
                     {[
                         { Icon: Mail, href: 'mailto:support@corus.space' },
                         { Icon: InstagramIcon, href: 'https://instagram.com/corus.space' },
-                        { Icon: Linkedin, href: 'https://www.linkedin.com/company/corus-space' },
+                        { Icon: Linkedin, href: 'https://www.linkedin.com/in/corus-space/' },
                     ].map(({ Icon, href }, i) => (
                         <motion.a
                             key={i}
