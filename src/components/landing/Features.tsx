@@ -28,7 +28,7 @@ const FEATURES = [
 
 export function Features() {
     return (
-        <section className="py-20 px-4 md:px-12 w-full">
+        <section className="py-20 px-4 md:px-12 w-full bg-white/5">
             <div className="grid grid-cols-1 lg:grid-cols-2 items-start">
 
                 {/* Left: Headline */}

@@ -54,7 +54,7 @@ const PLANS = [
 
 export function Pricing() {
     return (
-        <section className="py-24 px-4 md:px-12 w-full bg-white/10">
+        <section className="py-24 px-4 md:px-12 w-full bg-white/5">
             <div className="mx-auto">
                 {/* Section Header */}
                 <motion.div
@@ -112,15 +112,17 @@ export function Pricing() {
                             </p>
 
                             {/* CTA Button */}
-                            <Button
-                                className={`w-full mb-8 h-12 rounded-2xl font-semibold ${plan.popular
-                                    ? 'bg-primary text-primary-foreground hover:bg-primary/90'
-                                    : 'bg-white/10 text-white hover:bg-white/20'
-                                    }`}
-                                asChild
-                            >
-                                <a href="/signup">{plan.cta}</a>
-                            </Button>
+                            <a href="/login">
+                                <Button
+                                    className={`w-full mb-8 h-12 rounded-2xl font-semibold ${plan.popular
+                                        ? 'bg-primary text-primary-foreground hover:bg-primary/90'
+                                        : 'bg-white/10 text-white hover:bg-white/20'
+                                        }`}
+                                    asChild
+                                >
+                                    {plan.cta}
+                                </Button>
+                            </a>
 
                             {/* Features List */}
                             <div className="space-y-4">

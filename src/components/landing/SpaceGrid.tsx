@@ -114,10 +114,11 @@ export function SpaceGrid() {
                         <h3 className="font-display text-3xl md:text-4xl font-medium leading-[1.1] mb-4">Can't find it?</h3>
                         <p className="text-black/70 mb-8 text-xl md:text-2xl">We build custom solutions for enterprise teams.</p>
                     </div>
-                    <button className="cursor-pointer w-full py-4 text-lg bg-black text-white rounded-full font-medium relative z-10 hover:scale-105 transition-transform">
-                        Contact Sales
-                    </button>
-
+                    <a href="/login">
+                        <button className="cursor-pointer w-full py-4 text-lg bg-black text-white rounded-full font-medium relative z-10 hover:scale-105 transition-transform">
+                            Contact Sales
+                        </button>
+                    </a>
                     {/* Decorative Circle */}
                     <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-white/20 rounded-full blur-2xl" />
                 </div>
