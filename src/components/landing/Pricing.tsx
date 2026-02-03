@@ -54,7 +54,7 @@ const PLANS = [
 
 export function Pricing() {
     return (
-        <section className="py-24 px-4 md:px-12 w-full bg-gradient-to-b from-[#09090b] to-black">
+        <section className="py-24 px-4 md:px-12 w-full bg-white/10">
             <div className="mx-auto">
                 {/* Section Header */}
                 <motion.div
