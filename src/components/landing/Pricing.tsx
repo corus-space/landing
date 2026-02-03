@@ -6,48 +6,51 @@ import { Button } from "@/components/ui/button";
 
 const PLANS = [
     {
-        name: "Flex",
+        name: "Quick Top-up",
         price: "15",
-        period: "per hour",
-        description: "Perfect for occasional users who need flexibility",
+        credits: "20",
+        coupons: "1",
+        description: "Perfect for a single session or a quick meeting.",
         features: [
-            "Pay as you go",
-            "Access to all spaces",
-            "High-speed wifi",
-            "Deals and discounts",
-            "Mobile app access"
+            "20 AED Credit balance",
+            "+1 Extra Access Coupon",
+            "No expiry / Time limits",
+            "Instant wallet credit",
+            "High-speed wifi"
         ],
-        cta: "Get Started",
+        cta: "Top Up Now",
         popular: false
     },
     {
-        name: "Pro",
-        price: "299",
-        period: "per month",
-        description: "Best for professionals who work regularly",
+        name: "Value Top-up",
+        price: "125",
+        credits: "140",
+        coupons: "2",
+        description: "Scale your workflow with extra access coupons.",
         features: [
-            "All Flex features",
-            "50+ hours per month",
-            "Priority booking",
-            "Dedicated support",
-            "Guest passes"
+            "140 AED Credit balance",
+            "+2 Extra Access Coupons",
+            "No expiry / Time limits",
+            "Access to all spaces",
+            "Priority support"
         ],
-        cta: "Start Free Trial",
+        cta: "Get Started",
         popular: true
     },
     {
-        name: "Team",
-        price: "Custom",
-        period: "contact us",
-        description: "Tailored solutions for growing teams",
+        name: "Premium Top-up",
+        price: "250",
+        credits: "300",
+        coupons: "3",
+        description: "The ultimate pack with maximum rewards.",
         features: [
-            "Unlimited hours",
-            "Private offices available",
-            "All Pro features",
-            "Team management",
-            "Custom billing"
+            "300 AED Credit balance",
+            "+3 Extra Access Coupons",
+            "No expiry / Time limits",
+            "Dedicated account manager",
+            "Custom booking support"
         ],
-        cta: "Contact Sales",
+        cta: "Go Premium",
         popular: false
     }
 ];
@@ -102,27 +105,34 @@ export function Pricing() {
 
                             {/* Price */}
                             <div className="mb-4">
-                                <span className="text-5xl font-bold text-white">AED {plan.price}</span>
-                                <span className="text-muted-foreground ml-2">/ {plan.period}</span>
+                                <span className="text-5xl font-bold text-primary">AED {plan.price}</span>
+                                <span className="text-muted-foreground ml-2">/ one-time</span>
+                            </div>
+
+                            <div className="mb-6 flex items-center gap-2">
+                                <div className="px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-wider">
+                                    {plan.credits} AED Credits
+                                </div>
+                                <div className="px-3 py-1 rounded-full bg-green-500/10 border border-green-500/20 text-green-400 text-xs font-bold uppercase tracking-wider">
+                                    +{plan.coupons} Coupons
+                                </div>
                             </div>
 
                             {/* Description */}
-                            <p className="text-muted-foreground mb-8">
+                            <p className="text-muted-foreground mb-8 text-sm">
                                 {plan.description}
                             </p>
 
                             {/* CTA Button */}
-                            <a href="/login">
-                                <Button
-                                    className={`w-full mb-8 h-12 rounded-2xl font-semibold ${plan.popular
-                                        ? 'bg-primary text-primary-foreground hover:bg-primary/90'
-                                        : 'bg-white/10 text-white hover:bg-white/20'
-                                        }`}
-                                    asChild
-                                >
-                                    {plan.cta}
-                                </Button>
-                            </a>
+                            <Button
+                                className={`w-full mb-8 h-12 rounded-2xl font-semibold transition-all ${plan.popular
+                                    ? 'bg-primary text-primary-foreground hover:bg-white hover:text-black shadow-lg shadow-primary/20'
+                                    : 'bg-white/5 text-white hover:bg-white/10 border border-white/10'
+                                    }`}
+                                asChild
+                            >
+                                <a href="/login">{plan.cta}</a>
+                            </Button>
 
                             {/* Features List */}
                             <div className="space-y-4">

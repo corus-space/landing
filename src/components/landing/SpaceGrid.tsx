@@ -9,7 +9,7 @@ const SPACES = [
         id: 1,
         title: "Private Offices",
         desc: "Enclosed workspaces for teams of 1-20.",
-        image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&q=80&w=800",
+        image: "/images/space-private.jpg",
         size: "large", // col-span-2
         price: "AED 50 / hr"
     },
@@ -17,7 +17,7 @@ const SPACES = [
         id: 2,
         title: "Hot Desks",
         desc: "Flexible seating in the common area.",
-        image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=800",
+        image: "/images/space-hotdesk.jpg",
         size: "small",
         price: "AED 10 / hr"
     },
@@ -25,7 +25,7 @@ const SPACES = [
         id: 3,
         title: "Podcast Studios",
         desc: "Soundproofed recording environments.",
-        image: "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&q=80&w=800",
+        image: "/images/space-podcast.jpg",
         size: "small",
         price: "AED 45 / hr"
     },
@@ -33,7 +33,7 @@ const SPACES = [
         id: 4,
         title: "Event Halls",
         desc: "Host workshops and network gatherings.",
-        image: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&q=80&w=800",
+        image: "/images/space-event.jpg",
         size: "large", // col-span-2
         price: "AED 200 / hr"
     },
@@ -41,7 +41,7 @@ const SPACES = [
         id: 5,
         title: "Meeting Rooms",
         desc: "Equipped with VC tech and whiteboards.",
-        image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800",
+        image: "/images/space-meeting.jpg",
         size: "small", // col-span-1
         price: "AED 60 / hr"
     },
@@ -49,7 +49,7 @@ const SPACES = [
         id: 6,
         title: "Community Pass",
         desc: "Access lounges and events only.",
-        image: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=800",
+        image: "/images/space-community.jpg",
         size: "small", // col-span-1
         price: "AED 5/hr"
     }

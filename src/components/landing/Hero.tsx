@@ -14,7 +14,7 @@ const SLIDES = [
         headline_2: "converge.",
         highlight: "converge.",
         subtext: "Access a curated network of premium workspaces, studios, and private offices.",
-        image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=2564", // Liquid Texture
+        image: "/images/hero-liquid.jpg", // Liquid Texture
         gradient: "from-[#1A3D3F] via-[#0D1818] to-[#080C0C]" // Deep Teal
     },
     {
@@ -23,7 +23,7 @@ const SLIDES = [
         headline_2: "breathe.",
         highlight: "breathe.",
         subtext: "Spacious, light-filled environments designed to clear your mind and elevate your output.",
-        image: "https://images.unsplash.com/photo-1531973576160-7125cd663d86?auto=format&fit=crop&q=80&w=2564", // Minimal space
+        image: "/images/hero-minimal.jpg", // Minimal space
         gradient: "from-[#2A2A2A] via-[#111111] to-[#000000]" // Monochrome
     },
     {
@@ -32,7 +32,7 @@ const SLIDES = [
         headline_2: "focus.",
         highlight: "focus.",
         subtext: "Sound-dampened studios and private pods for when deep work is non-negotiable.",
-        image: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=2564", // Office texture
+        image: "/images/hero-office.jpg", // Office texture
         gradient: "from-[#3F2E1A] via-[#18110D] to-[#0C0806]" // Warm/Dark Brown
     }
 ];
